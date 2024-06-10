@@ -3,7 +3,7 @@ import Image from "react-bootstrap/Image";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { connect } from "react-redux";
-import { Link, redirect, useNavigation } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 import { authenticateUser } from "../actions/shared";
 import { APP_PATH } from "../utils/constant";
 

@@ -17,6 +17,7 @@ import HomePage from "./HomePage";
 import LeaderboardPage from "./LeaderboardPage";
 import LoginPage from "./LoginPage";
 import NavigationBar from "./NavigationBar";
+import QuestionDetailPage from "./QuestionDetailPage";
 
 const Root = () => {
 	return (
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
 			<Route index element={<HomePage />} />
 			<Route path={APP_PATH.LEADERBOARD} element={<LeaderboardPage />} />
 			<Route path={APP_PATH.ADD_QUESTION} element={<AddQuestionPage />} />
+			<Route path={APP_PATH.QUESTION_DETAIL} element={<QuestionDetailPage />} />
 		</Route>
 	)
 );
