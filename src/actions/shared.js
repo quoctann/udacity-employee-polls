@@ -10,3 +10,9 @@ export function handleInitialData() {
 		});
 	};
 }
+
+export function authenticateUser(userObj) {
+	return (dispatch) => {
+		dispatch(setAuthedUser(userObj));
+	};
+}

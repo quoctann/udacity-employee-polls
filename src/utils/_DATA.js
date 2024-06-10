@@ -1,9 +1,10 @@
 export let users = {
 	sarahedo: {
 		id: "sarahedo",
-		password: "password123",
+		// password: "password123",
+		password: "1",
 		name: "Sarah Edo",
-		avatarURL: null,
+		avatarURL: "https://picsum.photos/200",
 		answers: {
 			"8xf0y6ziyjabvozdd253nd": "optionOne",
 			"6ni6ok3ym7mf1p33lnez": "optionOne",
@@ -16,7 +17,7 @@ export let users = {
 		id: "tylermcginnis",
 		password: "abc321",
 		name: "Tyler McGinnis",
-		avatarURL: null,
+		avatarURL: "https://picsum.photos/200",
 		answers: {
 			vthrdm985a262al8qx3do: "optionOne",
 			xj352vofupe1dqz9emx13r: "optionTwo",
@@ -27,7 +28,7 @@ export let users = {
 		id: "mtsamis",
 		password: "xyz123",
 		name: "Mike Tsamis",
-		avatarURL: null,
+		avatarURL: "https://picsum.photos/200",
 		answers: {
 			xj352vofupe1dqz9emx13r: "optionOne",
 			vthrdm985a262al8qx3do: "optionTwo",
@@ -39,7 +40,7 @@ export let users = {
 		id: "zoshikanlu",
 		password: "pass246",
 		name: "Zenobia Oshikanlu",
-		avatarURL: null,
+		avatarURL: "https://picsum.photos/200",
 		answers: {
 			xj352vofupe1dqz9emx13r: "optionOne",
 		},
