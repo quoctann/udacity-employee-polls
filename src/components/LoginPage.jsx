@@ -1,8 +1,5 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
+import { Button, Card, Container, Form } from "react-bootstrap";
 import { connect } from "react-redux";
 import { authenticateUser } from "../actions/shared";
 import { login } from "../utils/api";

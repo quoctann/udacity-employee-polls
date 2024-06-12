@@ -1,25 +1,30 @@
 import moment from "moment";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
+import { Button, Card } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
-const QuestionCard = () => {
-	const createdAt = moment().format("MMMM Do YYYY, h:mm:ss a");
-	const createdBy = "some user name";
-	const questionId = "some id";
+const QuestionCard = ({ question, isAnswered }) => {
+	const { id: questionId, author, timestamp } = question;
+
+	const createdAt = moment(timestamp).format("DD MMM YYYY, h:mm:ss a");
+
 	const navigate = useNavigate();
+
 	const handleShowButtonClick = (questionId) => {
-		console.log(questionId);
-		navigate("/questions/" + 123);
+		navigate("/questions/" + questionId, {
+			state: { ...question, isAnswered: isAnswered },
+		});
 	};
 
 	return (
 		<Card style={{ width: "18rem" }} className="m-2">
 			<Card.Body>
-				<Card.Title>{createdBy}</Card.Title>
+				<Card.Title>{author}</Card.Title>
 				<Card.Text>{createdAt}</Card.Text>
 				<div className="d-grid">
-					<Button variant="outline-success" onClick={handleShowButtonClick}>
+					<Button
+						variant="outline-success"
+						onClick={() => handleShowButtonClick(questionId)}
+					>
 						Show
 					</Button>
 				</div>

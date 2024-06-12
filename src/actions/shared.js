@@ -1,13 +1,13 @@
 import { getInitialData } from "../utils/api";
 import { setAuthedUser } from "./authedUser";
-
-const AUTHED_ID = "tylermcginnis";
+import { receiveUser } from "./users";
+import { receiveQuestion } from "./questions";
 
 export function handleInitialData() {
-	return (dispatch) => {
-		return getInitialData().then(({ users }) => {
-			dispatch(setAuthedUser(null));
-		});
+	return async (dispatch) => {
+		const { users, questions } = await getInitialData();
+		dispatch(receiveUser(users));
+		dispatch(receiveQuestion(questions));
 	};
 }
 
