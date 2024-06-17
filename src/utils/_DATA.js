@@ -1,8 +1,7 @@
 export let users = {
 	sarahedo: {
 		id: "sarahedo",
-		// password: "password123",
-		password: "1",
+		password: "password123",
 		name: "Sarah Edo",
 		avatarURL: "https://picsum.photos/200",
 		answers: {
@@ -48,7 +47,7 @@ export let users = {
 	},
 };
 
-let questions = {
+export let questions = {
 	"8xf0y6ziyjabvozdd253nd": {
 		id: "8xf0y6ziyjabvozdd253nd",
 		author: "sarahedo",
