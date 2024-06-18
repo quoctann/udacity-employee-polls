@@ -1,4 +1,5 @@
-import { _saveQuestion, _saveQuestionAnswer } from "../utils/_DATA";
+import { _saveQuestion, _saveQuestionAnswer, _getUsers } from "../utils/_DATA";
+import { users } from "../utils/_DATA";
 
 describe("Test API call on _DATA.js", () => {
 	it("Should success saving question", async () => {
@@ -16,7 +17,7 @@ describe("Test API call on _DATA.js", () => {
 	});
 
 	it("Should failed saving question", async () => {
-		expect(_saveQuestion({})).rejects.toBe(
+		await expect(_saveQuestion({})).rejects.toBe(
 			"Please provide optionOneText, optionTwoText, and author"
 		);
 	});
@@ -34,7 +35,7 @@ describe("Test API call on _DATA.js", () => {
 	});
 
 	it("Should failed saving question answer", async () => {
-		expect(_saveQuestionAnswer({})).rejects.toBe(
+		await expect(_saveQuestionAnswer({})).rejects.toBe(
 			"Please provide authedUser, qid, and answer"
 		);
 	});

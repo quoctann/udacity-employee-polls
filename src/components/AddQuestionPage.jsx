@@ -1,7 +1,5 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
+import { Button, Alert, Container, Form } from "react-bootstrap";
 import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { handleAddQuestion } from "../actions/questions";
@@ -12,6 +10,7 @@ const AddQuestionPage = (props) => {
 
 	const [optionOne, setOptionOne] = useState("");
 	const [optionTwo, setOptionTwo] = useState("");
+	const [errMsg, setErrMsg] = useState(null);
 
 	const {
 		authedUser: { id },
@@ -30,6 +29,13 @@ const AddQuestionPage = (props) => {
 	const handleFormSubmit = (event) => {
 		if (event) {
 			event.preventDefault();
+			if (!optionOne || !optionTwo || !id) {
+				setErrMsg("Input must not empty");
+				return;
+			}
+
+			setErrMsg(null);
+
 			const question = {
 				optionOneText: optionOne,
 				optionTwoText: optionTwo,
@@ -45,6 +51,7 @@ const AddQuestionPage = (props) => {
 			<div className="mt-4 text-center">
 				<h1>Would You Rather</h1>
 				<p>Create Your Own Poll</p>
+				{errMsg ? <Alert variant="danger">{errMsg}</Alert> : ""}
 			</div>
 
 			<Form onSubmit={handleFormSubmit}>

@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test HomePage component Should render correct QuestionCard component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <div
+          class="my-4 p-1 card"
+        >
+          <h3
+            class="text-center card-header"
+          >
+            New Question
+          </h3>
+          <div
+            class="card-body"
+          >
+            <div
+              class="d-flex flex-wrap"
+            >
+              <div
+                class="m-2 card"
+                style="width: 18rem;"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    sarahedo
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    04 Mar 2017, 5:22:47 am
+                  </p>
+                  <div
+                    class="d-grid"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="m-2 card"
+                style="width: 18rem;"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    tylermcginnis
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    24 Dec 2016, 6:42:47 pm
+                  </p>
+                  <div
+                    class="d-grid"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="m-2 card"
+                style="width: 18rem;"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    mtsamis
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    14 Jul 2016, 2:02:47 pm
+                  </p>
+                  <div
+                    class="d-grid"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="m-2 card"
+                style="width: 18rem;"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    sarahedo
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    29 Jun 2016, 9:21:12 am
+                  </p>
+                  <div
+                    class="d-grid"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="my-4 p-1 card"
+        >
+          <h3
+            class="text-center card-header"
+          >
+            Done
+          </h3>
+          <div
+            class="card-body"
+          >
+            <div
+              class="d-flex flex-wrap"
+            >
+              <div
+                class="m-2 card"
+                style="width: 18rem;"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    mtsamis
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    01 May 2017, 2:16:07 am
+                  </p>
+                  <div
+                    class="d-grid"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="m-2 card"
+                style="width: 18rem;"
+              >
+                <div
+                  class="card-body"
+                >
+                  <div
+                    class="card-title h5"
+                  >
+                    tylermcginnis
+                  </div>
+                  <p
+                    class="card-text"
+                  >
+                    15 Mar 2017, 7:09:27 pm
+                  </p>
+                  <div
+                    class="d-grid"
+                  >
+                    <button
+                      class="btn btn-outline-success"
+                      type="button"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <div
+        class="my-4 p-1 card"
+      >
+        <h3
+          class="text-center card-header"
+        >
+          New Question
+        </h3>
+        <div
+          class="card-body"
+        >
+          <div
+            class="d-flex flex-wrap"
+          >
+            <div
+              class="m-2 card"
+              style="width: 18rem;"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  sarahedo
+                </div>
+                <p
+                  class="card-text"
+                >
+                  04 Mar 2017, 5:22:47 am
+                </p>
+                <div
+                  class="d-grid"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="m-2 card"
+              style="width: 18rem;"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  tylermcginnis
+                </div>
+                <p
+                  class="card-text"
+                >
+                  24 Dec 2016, 6:42:47 pm
+                </p>
+                <div
+                  class="d-grid"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="m-2 card"
+              style="width: 18rem;"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  mtsamis
+                </div>
+                <p
+                  class="card-text"
+                >
+                  14 Jul 2016, 2:02:47 pm
+                </p>
+                <div
+                  class="d-grid"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="m-2 card"
+              style="width: 18rem;"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  sarahedo
+                </div>
+                <p
+                  class="card-text"
+                >
+                  29 Jun 2016, 9:21:12 am
+                </p>
+                <div
+                  class="d-grid"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-4 p-1 card"
+      >
+        <h3
+          class="text-center card-header"
+        >
+          Done
+        </h3>
+        <div
+          class="card-body"
+        >
+          <div
+            class="d-flex flex-wrap"
+          >
+            <div
+              class="m-2 card"
+              style="width: 18rem;"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  mtsamis
+                </div>
+                <p
+                  class="card-text"
+                >
+                  01 May 2017, 2:16:07 am
+                </p>
+                <div
+                  class="d-grid"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="m-2 card"
+              style="width: 18rem;"
+            >
+              <div
+                class="card-body"
+              >
+                <div
+                  class="card-title h5"
+                >
+                  tylermcginnis
+                </div>
+                <p
+                  class="card-text"
+                >
+                  15 Mar 2017, 7:09:27 pm
+                </p>
+                <div
+                  class="d-grid"
+                >
+                  <button
+                    class="btn btn-outline-success"
+                    type="button"
+                  >
+                    Show
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
