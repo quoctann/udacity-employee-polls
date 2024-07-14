@@ -1,8 +1,13 @@
 import Container from "react-bootstrap/Container";
 import { Link, useRouteError } from "react-router-dom";
 
-export default function ErrorPage() {
+export default function ErrorPage({ code, status }) {
 	const error = useRouteError();
+
+	let errorText = error?.statusText || error?.message;
+	if (code && status) {
+		errorText = `${code} ${status}`;
+	}
 
 	return (
 		<Container>
@@ -10,7 +15,7 @@ export default function ErrorPage() {
 				<h1>Oops!</h1>
 				<p>Unexpected error occurred</p>
 				<p>
-					<i>{error.statusText || error.message}</i>
+					<i>{errorText}</i>
 				</p>
 				<Link to={`/`}>Go to homepage</Link>
 			</div>

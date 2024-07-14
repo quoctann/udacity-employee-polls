@@ -3,6 +3,7 @@ const APP_PATH = {
 	LEADERBOARD: "/leaderboard",
 	ADD_QUESTION: "/add",
 	QUESTION_DETAIL: "/questions/:question_id",
+	ERROR_PAGE: "/error",
 };
 
 Object.freeze(APP_PATH);

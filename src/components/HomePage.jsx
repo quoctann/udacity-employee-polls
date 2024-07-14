@@ -1,8 +1,17 @@
-import { Container } from "react-bootstrap";
+import { useState } from "react";
+import { Button, ButtonGroup, Container } from "react-bootstrap";
 import { connect } from "react-redux";
 import QuestionList from "./QuestionList";
 
 const HomePage = (props) => {
+	const [newQuestion, doneQuestion] = ["New Question", "Done"];
+
+	const [isNewQuestionView, setIsNewQuestionView] = useState(true);
+
+	const handleToggleView = (value) => {
+		setIsNewQuestionView(value);
+	};
+
 	const {
 		questions,
 		authedUser: { id },
@@ -22,12 +31,34 @@ const HomePage = (props) => {
 
 	return (
 		<Container>
-			<QuestionList
-				title={"New Question"}
-				questionList={unanswered}
-				isAnswered={false}
-			/>
-			<QuestionList title={"Done"} questionList={answered} isAnswered={true} />
+			<ButtonGroup size="lg" className="my-2 mx-auto">
+				<Button
+					variant={isNewQuestionView ? "primary" : "secondary"}
+					onClick={() => handleToggleView(true)}
+				>
+					{newQuestion}
+				</Button>
+				<Button
+					variant={!isNewQuestionView ? "primary" : "secondary"}
+					onClick={() => handleToggleView(false)}
+				>
+					{doneQuestion}
+				</Button>
+			</ButtonGroup>
+
+			{isNewQuestionView ? (
+				<QuestionList
+					title={newQuestion}
+					questionList={unanswered}
+					isAnswered={false}
+				/>
+			) : (
+				<QuestionList
+					title={doneQuestion}
+					questionList={answered}
+					isAnswered={true}
+				/>
+			)}
 		</Container>
 	);
 };

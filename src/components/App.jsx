@@ -31,10 +31,27 @@ const Root = () => {
 const router = createBrowserRouter(
 	createRoutesFromElements(
 		<Route path={APP_PATH.ROOT} element={<Root />} errorElement={<ErrorPage />}>
-			<Route index element={<HomePage />} />
-			<Route path={APP_PATH.LEADERBOARD} element={<LeaderboardPage />} />
-			<Route path={APP_PATH.ADD_QUESTION} element={<AddQuestionPage />} />
-			<Route path={APP_PATH.QUESTION_DETAIL} element={<QuestionDetailPage />} />
+			<Route index element={<HomePage />} errorElement={<ErrorPage />} />
+			<Route
+				path={APP_PATH.LEADERBOARD}
+				element={<LeaderboardPage />}
+				errorElement={<ErrorPage />}
+			/>
+			<Route
+				path={APP_PATH.ADD_QUESTION}
+				element={<AddQuestionPage />}
+				errorElement={<ErrorPage />}
+			/>
+			<Route
+				path={APP_PATH.QUESTION_DETAIL}
+				element={<QuestionDetailPage />}
+				errorElement={<ErrorPage />}
+			/>
+			<Route
+				path={APP_PATH.ERROR_PAGE}
+				element={<ErrorPage />}
+				errorElement={<ErrorPage />}
+			/>
 		</Route>
 	)
 );
@@ -47,7 +64,8 @@ const App = ({ dispatch, authedUser }) => {
 	return authedUser ? <RouterProvider router={router} /> : <LoginPage />;
 };
 
-const mapStateToProps = ({ authedUser }) => ({
+const mapStateToProps = ({ authedUser, questions }) => ({
+	questions,
 	authedUser,
 });
 
